@@ -259,3 +259,7 @@ hr {
     font-size: 2rem;
     text-align:center;
 }
+.cp{
+     border-radius: 50%;
+    display:inline-block;
+       width: 100px;
