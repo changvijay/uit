@@ -17,7 +17,7 @@
         <a href="#men">FOR MEN</a>
         <a href="#women">FOR WOMEN</a>
         <a href="">CART</a>
-        <input type="text" placeholder="search...">
+        <input class="sea" type="text" placeholder="search...">
     </div>
 
     <section id="home">
@@ -176,26 +176,43 @@
                             referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
                 <div class="context">
-                    context numbers :7010747878 <br>
-                    Email ID : changvijay54@gmail.com
-                    <div style="padding-left: 50px ;"><img src="img/icon.png" alt="" srcset="" width="250px"></div>
+                    <h1>context numbers :7010747878 <br>
+                        Email ID : changvijay54@gmail.com <br></h1>
+                    <div class="rating">
+                        <h2>Place to rate how was the shopping</h2>
+                        &#128545; <input class="range" type="range" min="1" max="99" id="get" onchange="val()">&#128512;
+                        <br><input type="text" value="50" id="put">
+                        <label for="name">
+                            <h3>NAME</h3>
+                        </label>
+                        <input class="line" type="text">
+                        <label for="name">
+                            <h3>E-mail</h3>
+                        </label>
+                        <input class="line" type="email"><br>
+                        <input style="width: 50%;" type="submit">
+                    </div>
                 </div>
-                <div class="endimg"><img class="phone" src="img/end.jpg" alt="" srcset="" height="350px"></div>
-            
-            <center>
-                <div style="font-size: 2rem; background-color:gray; color:white;">
-                    <div class="cr">c</div> 2021-<span id="root"></span> changvijay Ltd All Rights
-                    Reserved
-                </div>
-            </center>
-                </div>
+            </div>
         </section>
+        <center>
+            <div style="font-size: 2rem; background-color:gray; color:white;">
+                <br><br><br><br><br><br><br><div class="cr">c</div> 2021-<span id="root"></span> changvijay Ltd All Rights
+                Reserved
+            </div>
+        </center>
+
 
         <script>
+            function val() {
+                var get = document.getElementById("get").value;
+                document.getElementById("put").value = get
+
+            }
             document.getElementById("root").innerHTML = new Date().getFullYear();
         </script>
 
 </body>
 
+
 </html>
-<!--  -->
